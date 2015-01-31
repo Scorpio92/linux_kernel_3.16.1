@@ -2,7 +2,7 @@
 
 0.
 
-1.Краткая информация о системе
+Краткая информация о системе
 
 echo "System: "`lsb_release -d --short` `uname -m`                            > ~/about_system.txt   # версия ОС и разрядность
 echo "Kernel: "`uname -r`"  DE: $XDG_CURRENT_DESKTOP   Session: $GDMSESSION" >> ~/about_system.txt   # ядро, DE и вид сессии
@@ -51,6 +51,11 @@ make 3.16.1-031601-generic_defconfig
 
 *******custom config****************
 make custom_defconfig
+************************************
+
+
+***minimal config*минимум модулей***
+make minimal_defconfig
 ************************************
 
 3.
